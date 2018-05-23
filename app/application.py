@@ -36,7 +36,7 @@ def main():
         else:
             threshold_msg += "Critical threshold set to -1, not failing.\n"
     if non_crit_findings > non_crit_threshold:
-        threshold_msg += "Non-critical findings: %s Threshold: %s\n" % (non_crit_findings, crit_threshold)  # NOQA
+        threshold_msg += "Non-critical findings: %s Threshold: %s\n" % (non_crit_findings, non_crit_threshold)  # NOQA
         if non_crit_threshold != -1:
             over_threshold = True
         else:
